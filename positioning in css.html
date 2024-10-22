@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>CSS</title>
+
+    <style>
+body {
+    
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+display: flex;
+}
+.sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+    background-color: darkcyan;
+    color: aqua;
+padding: 20px;
+box-sizing: border-box;
+}
+.sidebar h2 {
+    color: aquamarine;
+
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+
+}
+.sidebar ul li {
+    padding: 15px 0;
+}
+.article {
+    margin-left: 220px;
+    padding: 20px;
+    width: calc(100%-220px);
+    background-color: cyan;
+}
+.article h1 {
+    color: lightslategrey;
+}
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+.image-gallery img {
+    width:100%;
+    height: auto;
+    border: 2px mediumaquamarine;
+    border-radius: 5px;
+
+}
+.image-gallery img:hover {
+    opacity: 0.5;
+}
+#img1{
+width: 300px;
+height: 200px;
+}
+    </style>
+
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2>Sidebar Menu</h2>
+        <ul>
+            <li><a href="https://www.chess.com/home" style="color: aqua; text-decoration: none;" >Chess</a></li>
+    <li><a href="#" style="color: aqua; text-decoration: none;">Services</a></li>
+    <li><a href="#" style="color: aqua; text-decoration: none;">contact</a></li>
+    <li><a href="#" style="color: aqua; text-decoration: none;">About</a></li>
+    <li><a href="#" style="color: aqua; text-decoration: none;">More Games</a></li>
+<li><a href="#" style="color: aqua; text-decoration: none;">Premium</a></li>
+        </ul>
+    </div>
+<div class="article">
+    <h1>Chess</h1>
+    <p>Chess is an abstract strategy game that involves no hidden information and no elements of chance. It is played on a
+    chessboard with 64 squares arranged in an 8×8 grid. The players, referred to as "White" and "Black".</p>
+
+    <div class="image-gallery">
+<img src="https://th.bing.com/th/id/OIP.wdwXybStGK-VdLdN1BR4RwAAAA?rs=1&pid=ImgDetMain" alt="Image 1" id="img1">
+<img src="https://media.istockphoto.com/photos/the-queen-in-highlight-picture-id916516826?k=6&m=916516826&s=612x612&w=0&h=zJUDjNgCUw-t4gAJVZwQAqewpyadZe7qqqbIaItI3u0=" alt="Image 1" id="img1">
+<img src="https://th.bing.com/th/id/OIP.OBsOU1SmC2phBZL48DQmIwHaDt?rs=1&pid=ImgDetMain" alt="Image 1" id="img1">
+<img src="https://th.bing.com/th/id/OIP.OBsOU1SmC2phBZL48DQmIwHaDt?rs=1&pid=ImgDetMain" alt="Image 1" id="img1">
+    </div>
+    <div class="image-gallery">
+        <img src="https://th.bing.com/th/id/OIP.wdwXybStGK-VdLdN1BR4RwAAAA?rs=1&pid=ImgDetMain" alt="Image 1" id="img1">
+        <img src="https://media.istockphoto.com/photos/the-queen-in-highlight-picture-id916516826?k=6&m=916516826&s=612x612&w=0&h=zJUDjNgCUw-t4gAJVZwQAqewpyadZe7qqqbIaItI3u0="
+            alt="Image 1" id="img1">
+        <img src="https://th.bing.com/th/id/OIP.OBsOU1SmC2phBZL48DQmIwHaDt?rs=1&pid=ImgDetMain" alt="Image 1" id="img1">
+        <img src="https://th.bing.com/th/id/OIP.OBsOU1SmC2phBZL48DQmIwHaDt?rs=1&pid=ImgDetMain" alt="Image 1" id="img1">
+    </div>
+</div>
+</body>
+
+</html>
